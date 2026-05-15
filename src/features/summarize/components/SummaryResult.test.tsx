@@ -14,7 +14,7 @@ describe('SummaryResult', () => {
 
   it('renders the error state with a retry button', async () => {
     const onRetry = vi.fn();
-    const error: SummaryApiError = { data: { error: 'Rate limit exceeded' }, status: 429 };
+    const error: SummaryApiError = { data: { error: { code: 429, message: 'Rate limit exceeded', status: 'RESOURCE_EXHAUSTED' } }, status: 429 };
 
     render(
       <SummaryResult isFetching={false} error={error} article={null} onRetry={onRetry} />
@@ -48,7 +48,7 @@ describe('SummaryResult', () => {
   });
 
   it('shows a generic error message when error has no message', () => {
-    const error = { data: { error: '' }, status: 500 } as SummaryApiError;
+    const error: SummaryApiError = { data: { error: { code: 500, message: '', status: 'INTERNAL' } }, status: 500 };
     render(
       <SummaryResult isFetching={false} error={error} article={null} onRetry={vi.fn()} />
     );
