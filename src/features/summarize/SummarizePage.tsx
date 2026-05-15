@@ -33,6 +33,8 @@ export function SummarizePage() {
     handleSelectFromHistory,
     handleCopy,
     handleRetry,
+    handleDeleteFromHistory,
+    handleClearHistory,
   } = useArticleSummarizer();
 
   const hasContent = isFetching || !!error || !!currentArticle;
@@ -69,6 +71,8 @@ export function SummarizePage() {
               copiedUrl={copiedUrl}
               onSelect={handleSelectFromHistory}
               onCopy={handleCopy}
+              onDelete={handleDeleteFromHistory}
+              onClear={handleClearHistory}
             />
             <div>
               {hasContent ? (

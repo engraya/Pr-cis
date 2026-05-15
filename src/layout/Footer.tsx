@@ -8,12 +8,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-3">
-            <p className="font-bold text-slate-900 dark:text-slate-50">QuickSum AI</p>
+            <p className="font-bold text-slate-900 dark:text-slate-50">Précis</p>
             <p className="text-sm text-slate-500 dark:text-slate-400 max-w-[220px] leading-relaxed">
               Read less, know more. AI-powered article summaries in seconds.
             </p>
             <p className="text-xs text-slate-400 dark:text-slate-600">
-              &copy; {new Date().getFullYear()} QuickSum AI. All rights reserved.
+              &copy; {new Date().getFullYear()} Précis. All rights reserved.
             </p>
           </div>
 

@@ -14,7 +14,7 @@ export function Header() {
           <Link to="/" aria-label="Go to home page" className="flex items-center gap-2 shrink-0">
             <img className="h-6 w-auto" src={logo} alt="" aria-hidden="true" />
             <span className="font-bold text-slate-900 dark:text-slate-50 text-base tracking-tight">
-              QuickSum AI
+              Précis
             </span>
           </Link>
 

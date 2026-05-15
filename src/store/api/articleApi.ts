@@ -11,7 +11,7 @@ export const articleApi = createApi({
     getSummary: builder.query<SummaryApiResponse, { articleUrl: string }>({
       query: ({ articleUrl }) => {
         if (!geminiApiKey) {
-          console.error('[QuickSum] VITE_GEMINI_API_KEY is not set. API calls will fail.');
+          console.error('[Précis] VITE_GEMINI_API_KEY is not set. API calls will fail.');
         }
         return {
           url: `models/${API_CONFIG.MODEL}:generateContent?key=${geminiApiKey ?? ''}`,

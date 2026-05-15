@@ -12,7 +12,7 @@ const testimonials: Testimonial[] = [
     name: 'Sarah Johnson',
     title: 'CEO, Creative Solutions Inc.',
     quote:
-      'QuickSum AI has revolutionized the way I handle content research. The summaries are accurate and incredibly useful for my work.',
+      'Précis has revolutionized the way I handle content research. The summaries are accurate and incredibly useful for my work.',
     initials: 'SJ',
   },
   {
@@ -26,28 +26,28 @@ const testimonials: Testimonial[] = [
     name: 'Emily Zhang',
     title: 'Software Engineer, Tech Innovators',
     quote:
-      "I love that QuickSum AI is open source. It's a fantastic tool that also allows me to contribute to its development.",
+      "I love that Précis is open source. It's a fantastic tool that also allows me to contribute to its development.",
     initials: 'EZ',
   },
   {
     name: 'Maria Gonzalez',
     title: 'Student, University of Knowledge',
     quote:
-      'QuickSum AI is a lifesaver for my studies. It helps me get through academic papers quickly and efficiently.',
+      'Précis is a lifesaver for my studies. It helps me get through academic papers quickly and efficiently.',
     initials: 'MG',
   },
   {
     name: 'Michael Brown',
     title: 'Digital Marketer, AdVance Marketing',
     quote:
-      "QuickSum AI helps me stay updated with industry trends without spending hours reading articles. Highly recommend it!",
+      "Précis helps me stay updated with industry trends without spending hours reading articles. Highly recommend it!",
     initials: 'MB',
   },
   {
     name: 'John Smith',
     title: 'Writer, Self-Employed',
     quote:
-      'As a writer, I often need to digest large amounts of information. QuickSum AI makes this task much more manageable.',
+      'As a writer, I often need to digest large amounts of information. Précis makes this task much more manageable.',
     initials: 'JS',
   },
 ];
@@ -97,7 +97,7 @@ export function Testimonials() {
           <span className="badge">Testimonials</span>
           <h2 className="section-title">Loved by readers</h2>
           <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-            Here&apos;s what others have to say about QuickSum AI.
+            Here&apos;s what others have to say about Précis.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -72,6 +72,19 @@ export function useArticleSummarizer() {
     void getSummary({ articleUrl: url });
   }, [url, getSummary]);
 
+  const handleDeleteFromHistory = useCallback(
+    (deleteUrl: string) => {
+      setArticleHistory(articleHistory.filter(item => item.url !== deleteUrl));
+      if (currentArticle?.url === deleteUrl) setCurrentArticle(null);
+    },
+    [articleHistory, currentArticle, setArticleHistory]
+  );
+
+  const handleClearHistory = useCallback(() => {
+    setArticleHistory([]);
+    setCurrentArticle(null);
+  }, [setArticleHistory]);
+
   return {
     url,
     setUrl,
@@ -85,5 +98,7 @@ export function useArticleSummarizer() {
     handleSelectFromHistory,
     handleCopy,
     handleRetry,
+    handleDeleteFromHistory,
+    handleClearHistory,
   };
 }
