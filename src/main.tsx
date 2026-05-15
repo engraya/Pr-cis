@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import { Provider } from 'react-redux'
-import { store } from './service/store.ts'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.tsx';
+import { Provider } from 'react-redux';
+import { store } from '@store/index';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -10,4 +10,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <App />
     </Provider>
   </React.StrictMode>
-)
+);

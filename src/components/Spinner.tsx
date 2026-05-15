@@ -1,11 +1,24 @@
-function Spinner() {
-  return (
-<div className="relative flex justify-center items-center">
-  <div className="absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-purple-500" />
-  <img src="https://www.svgrepo.com/show/509001/avatar-thinking-9.svg" className="rounded-full h-28 w-28" alt="spinner"/>
-</div>
-
-  )
+interface SpinnerProps {
+  size?: 'sm' | 'md' | 'lg';
+  label?: string;
 }
 
-export default Spinner
+const sizeMap = {
+  sm: 'h-4 w-4 border-2',
+  md: 'h-8 w-8 border-[3px]',
+  lg: 'h-12 w-12 border-4',
+} as const;
+
+export function Spinner({ size = 'lg', label = 'Loading...' }: SpinnerProps) {
+  return (
+    <div role="status" aria-label={label || 'Loading'} className="flex justify-center items-center">
+      <div
+        className={`animate-spin rounded-full border-t-transparent border-indigo-600 ${sizeMap[size]}`}
+        aria-hidden="true"
+      />
+      {label && <span className="sr-only">{label}</span>}
+    </div>
+  );
+}
+
+export default Spinner;
