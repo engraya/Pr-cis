@@ -62,7 +62,7 @@ export function Header() {
               )}
             </button>
             <a
-              href="https://github.com/engraya/QuickSum-AI"
+              href="https://github.com/engraya/Pr-cis"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View source code on GitHub"

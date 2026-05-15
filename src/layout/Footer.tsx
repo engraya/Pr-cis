@@ -41,7 +41,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/engraya/QuickSum-AI"
+                  href="https://github.com/engraya/Pr-cis"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
@@ -68,22 +68,13 @@ export function Footer() {
                 <BsGithub className="h-4 w-4" aria-hidden="true" />
               </a>
               <a
-                href="https://www.linkedin.com/in/ahmad-yakubu-ahmad-miaeng-gmnse-41520b121/"
+                href="www.linkedin.com/in/engrahmadaya"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 className="btn-ghost p-2"
               >
                 <BsLinkedin className="h-4 w-4" aria-hidden="true" />
-              </a>
-              <a
-                href="https://x.com/ahmadyakubuaya"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X (Twitter)"
-                className="btn-ghost p-2"
-              >
-                <BsTwitterX className="h-4 w-4" aria-hidden="true" />
               </a>
             </div>
           </div>
