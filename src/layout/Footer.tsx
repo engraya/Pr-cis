@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin, BsTwitterX } from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 export function Footer() {
