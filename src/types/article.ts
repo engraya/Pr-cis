@@ -7,9 +7,21 @@ export interface SummaryApiResponse {
   summary: string;
 }
 
+export interface GeminiApiResponse {
+  candidates: Array<{
+    content: {
+      parts: Array<{ text: string }>;
+    };
+  }>;
+}
+
 export interface SummaryApiError {
   data: {
-    error: string;
+    error: {
+      code: number;
+      message: string;
+      status: string;
+    };
   };
   status: number;
 }

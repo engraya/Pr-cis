@@ -48,7 +48,7 @@ export function SummaryResult({ isFetching, error, article, onRetry }: SummaryRe
   }
 
   if (error) {
-    const message = error?.data?.error || 'Something went wrong. Please try again.';
+    const message = error?.data?.error?.message || 'Something went wrong. Please try again.';
     return (
       <div
         role="alert"

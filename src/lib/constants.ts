@@ -3,9 +3,9 @@ export const STORAGE_KEYS = {
 } as const;
 
 export const API_CONFIG = {
-  BASE_URL: 'https://article-extractor-and-summarizer.p.rapidapi.com/',
-  HOST: 'article-extractor-and-summarizer.p.rapidapi.com',
-  SUMMARY_LENGTH: 3,
+  BASE_URL: 'https://generativelanguage.googleapis.com/v1beta/',
+  MODEL: 'gemini-3-flash-preview',
+  SUMMARY_SENTENCES: 3,
 } as const;
 
 export const UI_CONFIG = {
